@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link type='text/css' href='css/bootstrap.min.css' rel='stylesheet'>
+	
+
+    <title>Learning Bootstrap 5</title>
+<style>section{padding: 60px,0;}</style>
+  </head>
+  <body>
+
+
+
+
+<hr />
+
+    <h1 class='h3'>Source: net ninja tutorial</h1>
+<p class='display-1 bg-success'>Hello, my name is Ritu Dhakrey. My brother is Anant and sister is Divya. YOu are welcome on my website</p>
+<p>can add our own styles as well in style tag in head section or an external css</p>
+<h1 class='h2'>we can use classes from h1 to 5 to change </h1>
+<h1 class='display-3'>display 1-5 changes the size</h1>
+<p class='text-center'>aligning text three options center start and end</p>
+<p class='text-start'>hey guys whatsup</p>
+<p class='text-end'>hey guys whatsup</p>
+<hr />
+<p class='text-decoration-underline'>text decoration optios: underline, line-through,</p>
+<p class='fw-bold'>font weight: used to bold the text. options: bold, bolder, light</p>
+<p class='fst-italic'>font style: italic</p>
+
+<hr />
+<p class='text-primary'>Colors: primary, secondary, success, danger, info, warning, muted</p>
+<p class='text-white'>text color white also works apart from above</p>
+<p class='text-light bg-danger'>bg color options same as text colors</p>
+<hr />
+<button class='btn btn-primary'>Button ex. btn is always there and then btn-colorname for its bg color. fg color changes based on contrast</button>
+
+<a href='#' class='btn btn-info'>anchor changed into button</a>
+<button class='btn btn-success btn-md'>Button size lg, sm. by default its size is medium.</button>
+<button class='btn btn-outline-primary'>Button with outline only</button>
+
+<hr />
+t#5 utility classes
+
+<p class='bg-primary m-1 p-5'>margin and padding: goes from 1 to 5. my for margin in y direction, mx for x dir. mx-5. for each dir separately use: top- mt, btm- mb, left-ms for start
+and right-me for end. similarly for padding</p>
+<p class='border m-3 p-3 rounded-pill bg-success shadow-lg'>to get the border, just write the border class. for individual border, use border-top, border-end, etc. border-success for border color. border-5 for thickness (1 to 5)
+. use rounded for rounded edges. rounded-pill for pill shape. shadow-sm for small shadow in border element. use lg for large shadow and only shadow for medium shadow</p>
+    
+<hr />
+t#6 containers
+<div class=container-fluid my-5>
+	<p>container options: container (max-width based on breakpoints), container-fluid (always 100% width), contianer-lg (100% width until lg and then max width based on breakpoint.
+instead of lg we can use sm,md,xs,xl, etc</p>
+</div>
+
+<hr />
+t#7 grid layout part 1
+<div class='container my-5'>
+<div class='row'>
+	<div class='col'><div class='bg-info'>grid goes inside a container. then row and then cols. </div></div>
+<div class='col-5'><div class='bg-info'>there are 12 col grids so if only col is used then equally divide the  space or use col-5 to take space of 5 cols for a particular col </div></div>
+<div class='col'><div class='bg-info'>to make col widths responsive, use col-sm-4 col-lg-6 to specify that for smaller screens use 4 col widht and for large screens use 6 col width.
+if you use, col-md-4 in all the three cols, then until md, all cols will be stacked and after md breakpoint all would be in single row with width of 4 each. similarly
+we can change it for other breakpoints, we can add multiple breakpoints as well </div></div>
+</div>
+</div>
+
+<div class='container my-5'>
+<div class='row align-items-center'>
+	<div class='col-md-4'><div class='bg-info m-3 p-3'>justify content if all widht is not utilized.in row class add one more: justify-content-center (can use between, start and end instead of center) </div></div>
+<div class='col-md-4'><div class='bg-info m-3 p-3'>align-items-center can be used to align all items of a row in center </div></div>
+<div class='col-md-4'><div class='bg-info m-3 p-3'>use text-center in col to center the content in col. use text-md-start to bring text to left when md breakpoint comes.
+in img tag img-fluid class makes it fluid ie 100% width of the parent element </div></div>
+</div>
+</div>
+
+  </body>
+</html>
